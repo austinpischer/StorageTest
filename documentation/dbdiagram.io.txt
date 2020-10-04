@@ -1,0 +1,29 @@
+Table tests {
+  test_id int [pk, increment]
+  timestamp datetime
+  group_id int
+  drive_id int
+  write_duration float
+  read_duration float
+  data_error bool
+}
+
+Table test_groups {
+  group_id int [pk, increment]
+  filesize_in_bytes int
+  checksum varchar
+}
+
+Table drives {
+  drive_id int [pk, increment]
+  drive_letter varchar [unique]
+  volume_name varchar
+  drive_type varchar
+  manufacturer varchar
+  model varchar
+  capacity_in_gigabytes int
+  filesystem varchar
+}
+
+Ref: tests.group_id > test_groups.group_id
+Ref: tests.drive_id > drives.drive_id
