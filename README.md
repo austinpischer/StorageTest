@@ -19,7 +19,7 @@ The database schema is represented by the following diagram ( created at https:/
 
 After executing runtests.py (test file size = 100 Megabytes, write/read cycles = 250 times to each drive)
 and then executing getgraph.py, the following graph is created:
-![Resultant Graph](/images/result.PNG)
+![Resultant Graph](/documentation/result.PNG)
 
 ## Rules for Code Appearance
 1. No line of code should exceed 80 characters in length
