@@ -15,11 +15,11 @@ This project does three main things:
 All other source code files are supplementary to these 2 scripts and thus live in the "austin" subdirectory.
 
 The database schema is represented by the following diagram ( created at https://dbdiagram.io/d ):
-// TODO
+![Database Diagram](/documentation/database.PNG)
 
 After executing runtests.py (test file size = 100 Megabytes, write/read cycles = 250 times to each drive)
 and then executing getgraph.py, the following graph is created:
-// TODO
+![Resultant Graph](/images/result.PNG)
 
 ## Rules for Code Appearance
 1. No line of code should exceed 80 characters in length
